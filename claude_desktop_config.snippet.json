@@ -1,0 +1,13 @@
+{
+  "_comment": "Paste the contents of mcpServers into your Claude Desktop config at %APPDATA%\\Claude\\claude_desktop_config.json (Windows) and restart Claude Desktop. The TrajectSec gateway then appears as tools inside a real, external Claude agent. Set TRAJECTSEC_ENFORCE to 0 to watch the unprotected agent, 1 to watch TrajectSec block the exfiltration.",
+  "mcpServers": {
+    "sprytech-trajectsec": {
+      "command": "C:\\demo1\\.venv\\Scripts\\python.exe",
+      "args": ["C:\\demo1\\mcp_server.py"],
+      "env": {
+        "TRAJECTSEC_ENFORCE": "1",
+        "TRAJECTSEC_INJECTION": "realistic"
+      }
+    }
+  }
+}
